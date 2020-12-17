@@ -1,0 +1,10 @@
+#Memoization recipe
+1. Make it work.
+  . Visaulize the problem as tree
+  . Implement the tree using recursion
+  . test it(with different values)
+
+2.Make it efficient
+ . add a memo object(keys to the argument in our function)
+ . add a base case to return memo values(in case if values occur again)
+ . store return values into the memo
