@@ -4,6 +4,8 @@
 //     if(m === 0 || n === 0) return 0;
 //     return gridTraveler(m-1,n)+gridTraveler(m,n-1);
 // };
+//time complexity:O(2^n)
+//space complexity: O(n): height of tree
 
 //with memoization
 const gridTraveler = (m,n,memo={})=>{
@@ -16,6 +18,8 @@ const gridTraveler = (m,n,memo={})=>{
     memo[key] =  gridTraveler(m-1,n,memo) + gridTraveler(m,n-1,memo);
     return memo[key];
 };
+//time complexity:O(n)
+//space complexity: O(n): height of tree
 
 console.log(gridTraveler(1,1));//1
 console.log(gridTraveler(2,3));//3

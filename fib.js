@@ -6,6 +6,8 @@
     if(n <= 2) return 1;
     return fib(n-1)+fib(n-2);
 }*/
+//time complexity:O(2^n)
+//space complexity: O(n): height of tree
 
 //with memoization
 //js object, keys will be arg to fn, value will be return value
@@ -16,6 +18,8 @@ const fib=((n,memo={})=>{
     return memo[n];
 
 })
+//time complexity:O(n)
+//space complexity: O(n): height of tree
 console.log(fib(6));
 console.log(fib(7));
 console.log(fib(8));
